@@ -54,8 +54,10 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Type 1 (overwrite): Keep only the most recent address, update in place.
-Type 2 (history): Keep all past addresses with start/end dates (or a current flag).
+Type 1 Slowly Changing Dimension (SCD Type 1) - overwrites history.
+Type 2 Slowly Changing Dimension (SCD Type 2) - retains history.
+SCD Type 1 (overwrite): Keep only the most recent address, update in place.
+SCD Type 2 (history): Keep all past addresses with start/end dates (or a current flag).
 ```
 
 ***
